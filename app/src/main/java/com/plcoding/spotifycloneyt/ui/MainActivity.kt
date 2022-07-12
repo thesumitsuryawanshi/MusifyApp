@@ -14,7 +14,6 @@ import com.plcoding.spotifycloneyt.adapters.SwipeSongAdapter
 import com.plcoding.spotifycloneyt.data.entities.Song
 import com.plcoding.spotifycloneyt.exoplayer.isPlaying
 import com.plcoding.spotifycloneyt.exoplayer.toSong
-import com.plcoding.spotifycloneyt.other.Status
 import com.plcoding.spotifycloneyt.other.Status.*
 import com.plcoding.spotifycloneyt.ui.viewmodels.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -103,7 +102,7 @@ class MainActivity : AppCompatActivity() {
                         result.data?.let { songs ->
                             swipeSongAdapter.songs = songs
                             if (songs.isNotEmpty()) {
-                                glide.load((curPlayingSong ?: songs[0]).imageUrl)
+                                glide.load((curPlayingSong ?: songs[0]).imgUrl)
                                     .into(ivCurSongImage)
                             }
                             switchViewPagerToCurrentSong(curPlayingSong ?: return@observe)
@@ -118,7 +117,7 @@ class MainActivity : AppCompatActivity() {
             if (it == null) return@observe
 
             curPlayingSong = it.toSong()
-            glide.load(curPlayingSong?.imageUrl).into(ivCurSongImage)
+            glide.load(curPlayingSong?.imgUrl).into(ivCurSongImage)
             switchViewPagerToCurrentSong(curPlayingSong ?: return@observe)
         }
         mainViewModel.playbackState.observe(this) {
@@ -152,27 +151,5 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

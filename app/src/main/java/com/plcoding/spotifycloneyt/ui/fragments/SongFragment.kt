@@ -76,9 +76,9 @@ class SongFragment : Fragment(R.layout.fragment_song) {
     }
 
     private fun updateTitleAndSongImage(song: Song) {
-        val title = "${song.title} - ${song.subtitle}"
-        tvSongName.text = title
-        glide.load(song.imageUrl).into(ivSongImage)
+        tvSongName.text = song.title
+        tvsubTitle.text = song.subTitle
+        glide.load(song.imgUrl).into(ivSongImage)
     }
 
     private fun subscribeToObservers() {
@@ -126,6 +126,7 @@ class SongFragment : Fragment(R.layout.fragment_song) {
         val dateFormat = SimpleDateFormat("mm:ss", Locale.getDefault())
         tvCurTime.text = dateFormat.format(ms)
     }
+
 }
 
 

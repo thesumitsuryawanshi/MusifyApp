@@ -10,9 +10,9 @@
         android:id="@+id/tvSongName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="SONG NAME"
         android:gravity="center"
-        android:textSize="24sp"
+        android:text="SONG NAME"
+        android:textSize="26sp"
         app:layout_constraintBottom_toTopOf="@+id/ivSongImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -66,6 +66,7 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:layout_marginTop="32dp"
+        android:padding="2dp"
         android:background="@drawable/circle_drawable"
         android:src="@drawable/ic_play"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,6 +78,7 @@
         android:id="@+id/ivSkipPrevious"
         android:layout_width="56dp"
         android:layout_height="56dp"
+        android:padding="5dp"
         android:layout_marginEnd="16dp"
         android:src="@drawable/ic_skip_previous"
         app:layout_constraintBottom_toBottomOf="@+id/ivPlayPauseDetail"
@@ -87,6 +89,7 @@
         android:id="@+id/ivSkip"
         android:layout_width="56dp"
         android:layout_height="56dp"
+        android:padding="5dp"
         android:layout_marginStart="16dp"
         android:src="@drawable/ic_skip"
         app:layout_constraintBottom_toBottomOf="@+id/ivPlayPauseDetail"
@@ -106,5 +109,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.7" />
+
+    <TextView
+        android:id="@+id/tvsubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textSize="16sp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSongName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
