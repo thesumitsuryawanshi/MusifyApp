@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/sumitsur/StudioProjects/Spotify_Clone/app/src/main/res/layout/activity_main.xml" value="0.2625" />
+        <entry key="..\:/Users/sumitsur/StudioProjects/Spotify_Clone/app/src/main/res/layout/fragment_create_account.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/sumitsur/StudioProjects/Spotify_Clone/app/src/main/res/layout/fragment_home.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/sumitsur/StudioProjects/Spotify_Clone/app/src/main/res/layout/fragment_login.xml" value="0.22395833333333334" />
         <entry key="..\:/Users/sumitsur/StudioProjects/Spotify_Clone/app/src/main/res/layout/fragment_song.xml" value="0.536" />
         <entry key="..\:/Users/sumitsur/StudioProjects/Spotify_Clone/app/src/main/res/layout/list_item.xml" value="0.7596302003081664" />
         <entry key="..\:/Users/sumitsur/StudioProjects/Spotify_Clone/app/src/main/res/layout/swipe_item.xml" value="0.6494736842105263" />

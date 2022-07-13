@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
 
     <fragment
@@ -14,4 +16,14 @@
 
     <action android:id="@+id/globalActionToSongFragment"
         app:destination="@id/songFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.plcoding.spotifycloneyt.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.plcoding.spotifycloneyt.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" />
 </navigation>
